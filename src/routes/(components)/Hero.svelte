@@ -4,7 +4,7 @@
 	import ExtensionImg from '$lib/assets/example.png';
 </script>
 
-<section class="flex flex-wrap items-center justify-center gap-16 py-24">
+<section class="flex flex-wrap items-center justify-center gap-16 py-16 pt-32">
 	<div class="space-y-12">
 		<div class="max-w-xl space-y-6">
 			<h1 class="text-4xl font-semibold md:text-5xl">
@@ -17,7 +17,6 @@
 		</div>
 		<div class="flex flex-col gap-3 sm:flex-row">
 			<Button variant="secondary"><Globe class="mr-2 h-4 w-4" />Get Basic for free</Button>
-
 			<Button><ShoppingCart class="mr-2 h-4 w-4" />Get Plus for £30</Button>
 		</div>
 	</div>

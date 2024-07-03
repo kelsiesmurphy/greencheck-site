@@ -6,10 +6,16 @@
 	import Pricing from './(components)/Pricing.svelte';
 	import FAQs from './(components)/FAQs.svelte';
 	import Footer from './(components)/Footer.svelte';
+	import HeaderMobile from './(components)/HeaderMobile.svelte';
 </script>
 
 <main class="container min-h-screen">
-	<Header />
+	<div class="hidden md:flex">
+		<Header />
+	</div>
+	<div class="flex md:hidden">
+		<HeaderMobile />
+	</div>
 	<Hero />
 	<Browsers />
 	<Features />
