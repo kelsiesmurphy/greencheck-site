@@ -1,1 +1,38 @@
-<p>features</p>
+<script lang="ts">
+	const featureList = [
+		{
+			title: 'See green-hosted websites at a glance',
+			description:
+				'Whether you have a team of 2 or 200, our shared team inboxes keep everyone on the same page and in the loop.'
+		},
+		{
+			title: 'Check to see if a website is hosted sustainably',
+			description:
+				'Whether you have a team of 2 or 200, our shared team inboxes keep everyone on the same page and in the loop.'
+		}
+	];
+
+	let currentTab = featureList[0];
+</script>
+
+<section class="space-y-16 py-24">
+	<h2 class="text-3xl font-semibold md:text-4xl">Free Features</h2>
+	<div class="flex flex-wrap justify-between gap-16">
+		<ul class="max-w-xl">
+			{#each featureList as feature}
+				<li>
+					<button
+						on:click={() => (currentTab = feature)}
+						class={`${currentTab == feature ? 'border-primary' : 'border-secondary'} transition-colors duration-300 flex flex-col gap-2 border-l-4 px-6 py-8`}
+					>
+						<h3 class="text-lg font-semibold md:text-xl">{feature.title}</h3>
+						<p class="text-left text-muted-foreground">{feature.description}</p>
+					</button>
+				</li>
+			{/each}
+		</ul>
+		<div class="aspect-[592/528] max-w-xl flex-1 bg-gray-200">
+			<!-- Add Features -->
+		</div>
+	</div>
+</section>

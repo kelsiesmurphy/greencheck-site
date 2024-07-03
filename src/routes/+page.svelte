@@ -8,7 +8,7 @@
 	import Footer from './(components)/Footer.svelte';
 </script>
 
-<main>
+<main class="container min-h-screen">
 	<Header />
 	<Hero />
 	<Browsers />
