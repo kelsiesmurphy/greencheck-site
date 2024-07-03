@@ -1,2 +1,19 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<script lang="ts">
+	import Header from './(components)/Header.svelte';
+	import Hero from './(components)/Hero.svelte';
+	import Browsers from './(components)/Browsers.svelte';
+	import Features from './(components)/Features.svelte';
+	import Pricing from './(components)/Pricing.svelte';
+	import FAQs from './(components)/FAQs.svelte';
+	import Footer from './(components)/Footer.svelte';
+</script>
+
+<main>
+	<Header />
+	<Hero />
+	<Browsers />
+	<Features />
+	<Pricing />
+	<FAQs />
+	<Footer />
+</main>
