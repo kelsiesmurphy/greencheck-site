@@ -4,7 +4,7 @@
 	import ExtensionImg from '$lib/assets/example.png';
 </script>
 
-<section class="flex flex-wrap items-center justify-between gap-16 py-24">
+<section class="flex flex-wrap items-center justify-center gap-16 py-24">
 	<div class="space-y-12">
 		<div class="max-w-xl space-y-6">
 			<h1 class="text-4xl font-semibold md:text-5xl">

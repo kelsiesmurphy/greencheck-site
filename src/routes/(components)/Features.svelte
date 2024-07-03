@@ -17,7 +17,7 @@
 
 <section class="space-y-16 py-24">
 	<h2 class="text-3xl font-semibold md:text-4xl">Free Features</h2>
-	<div class="flex flex-wrap justify-between gap-16">
+	<div class="flex flex-wrap justify-center gap-16">
 		<ul class="max-w-xl">
 			{#each featureList as feature}
 				<li>
@@ -31,7 +31,7 @@
 				</li>
 			{/each}
 		</ul>
-		<div class="aspect-[592/528] max-w-xl flex-1 bg-gray-200">
+		<div class="aspect-[592/528] min-w-[300px] max-w-xl flex-1 bg-gray-200">
 			<!-- Add Features -->
 		</div>
 	</div>
