@@ -1,4 +1,9 @@
 <script lang="ts">
+	import LottiePlayer from '$lib/components/LottiePlayer.svelte';
+
+	import SearchResultsLottie from '$lib/assets/SearchResultsLottie.json';
+	import ExtensionLottie from '$lib/assets/ExtensionLottie.json';
+
 	const featureList = [
 		{
 			title: 'See green-hosted websites at a glance',
@@ -23,7 +28,7 @@
 				<li>
 					<button
 						on:click={() => (currentTab = feature)}
-						class={`${currentTab == feature ? 'border-primary' : 'border-secondary'} transition-colors duration-300 flex flex-col gap-2 border-l-4 px-6 py-8 outline-brand`}
+						class={`${currentTab == feature ? 'border-primary' : 'border-secondary'} outline-brand flex flex-col gap-2 border-l-4 px-6 py-8 transition-colors duration-300`}
 					>
 						<h3 class="text-lg font-semibold md:text-xl">{feature.title}</h3>
 						<p class="text-left text-muted-foreground">{feature.description}</p>
@@ -31,8 +36,18 @@
 				</li>
 			{/each}
 		</ul>
-		<div class="aspect-[592/528] min-w-[300px] max-w-xl flex-1 bg-gray-200">
-			<!-- Add Features -->
+		<div
+			class="flex aspect-[592/528] min-w-[300px] max-w-xl flex-1 items-center justify-end bg-gray-100 p-12"
+		>
+			{#if currentTab == featureList[0]}
+				<div class="overflow-hidden rounded-l-lg opacity-100 shadow-lg">
+					<LottiePlayer lottieFile={SearchResultsLottie} />
+				</div>
+			{:else if currentTab == featureList[1]}
+				<div class="">
+					<LottiePlayer lottieFile={ExtensionLottie} />
+				</div>
+			{/if}
 		</div>
 	</div>
 </section>
