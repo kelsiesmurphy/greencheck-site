@@ -23,7 +23,7 @@
 				<li>
 					<button
 						on:click={() => (currentTab = feature)}
-						class={`${currentTab == feature ? 'border-primary' : 'border-secondary'} transition-colors duration-300 flex flex-col gap-2 border-l-4 px-6 py-8`}
+						class={`${currentTab == feature ? 'border-primary' : 'border-secondary'} transition-colors duration-300 flex flex-col gap-2 border-l-4 px-6 py-8 outline-brand`}
 					>
 						<h3 class="text-lg font-semibold md:text-xl">{feature.title}</h3>
 						<p class="text-left text-muted-foreground">{feature.description}</p>

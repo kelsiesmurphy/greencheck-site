@@ -55,3 +55,9 @@
 		@apply bg-background text-foreground;
 	}
 }
+
+@layer components {
+	.outline-brand {
+		@apply ring-offset-background focus-visible:rounded-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2;
+	}
+}

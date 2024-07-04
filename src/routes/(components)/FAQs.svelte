@@ -42,8 +42,8 @@
         <Accordion.Root class="w-full max-w-3xl">
             {#each faqList as faq}
                 <Accordion.Item value={faq.id.toString()} class="py-4">
-                    <Accordion.Trigger>{faq.question}</Accordion.Trigger>
-                    <Accordion.Content>{faq.answer}</Accordion.Content>
+                    <Accordion.Trigger class="outline-brand">{faq.question}</Accordion.Trigger>
+                    <Accordion.Content class="pt-4">{faq.answer}</Accordion.Content>
                 </Accordion.Item>
             {/each}
         </Accordion.Root>
