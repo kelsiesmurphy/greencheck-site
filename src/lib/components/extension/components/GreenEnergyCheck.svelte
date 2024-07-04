@@ -37,7 +37,7 @@
 						<h4 class="text-base font-medium">Good news!</h4>
 						<div class="text-sm">
 							This website is hosted by{' '}
-							<a href={greenHost.hosted_by_website} class="hover:underline">
+							<a href={greenHost.hosted_by_website} class="hover:underline outline-brand">
 								{greenHost.hosted_by}
 							</a>
 							, a provider committed to reducing its environmental impact.
