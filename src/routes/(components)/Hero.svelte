@@ -1,10 +1,10 @@
 <script>
 	import Button from '$lib/components/ui/button/button.svelte';
 	import { Globe, ShoppingCart } from 'lucide-svelte';
-	import ExtensionImg from '$lib/assets/example.png';
+	import Extension from '$lib/components/extension/extension.svelte';
 </script>
 
-<section class="flex flex-wrap items-center justify-center gap-16 py-16 pt-32">
+<section class="flex flex-wrap items-center justify-around gap-16 py-16 pt-40">
 	<div class="space-y-12">
 		<div class="max-w-xl space-y-6">
 			<h1 class="text-4xl font-semibold md:text-5xl">
@@ -20,5 +20,6 @@
 			<Button><ShoppingCart class="mr-2 h-4 w-4" />Get Plus for £30</Button>
 		</div>
 	</div>
-	<img src={ExtensionImg} alt="Example of the browser extension" />
+	<!-- <img src={ExtensionImg} alt="Example of the browser extension" /> -->
+	 <Extension />
 </section>
