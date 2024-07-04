@@ -39,7 +39,7 @@
 		<div
 			class="flex aspect-[592/528] min-w-[300px] max-w-xl flex-1 items-center justify-end bg-gray-100 p-12"
 		>
-			<!-- {#if currentTab == featureList[0]}
+			{#if currentTab == featureList[0]}
 				<div class="overflow-hidden rounded-l-lg opacity-100 shadow-lg">
 					<LottiePlayer lottieFile={SearchResultsLottie} />
 				</div>
@@ -47,7 +47,7 @@
 				<div class="">
 					<LottiePlayer lottieFile={ExtensionLottie} />
 				</div>
-			{/if} -->
+			{/if}
 		</div>
 	</div>
 </section>
