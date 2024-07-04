@@ -1,4 +1,4 @@
-<script lang="ts">
+<!-- <script lang="ts">
 	import lottie from "lottie-web/build/player/lottie_light";
 	import { onMount } from 'svelte';
 
@@ -13,4 +13,4 @@
 	});
 </script>
 
-<div bind:this={animationContainer} />
+<div bind:this={animationContainer} /> -->
