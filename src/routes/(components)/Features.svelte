@@ -1,5 +1,5 @@
 <script lang="ts">
-	import LottiePlayer from '$lib/components/LottiePlayer.svelte';
+	import { LottieSvelte } from 'lottie-player-svelte';
 
 	import SearchResultsLottie from '$lib/assets/SearchResultsLottie.json';
 	import ExtensionLottie from '$lib/assets/ExtensionLottie.json';
@@ -41,11 +41,11 @@
 		>
 			{#if currentTab == featureList[0]}
 				<div class="overflow-hidden rounded-l-lg opacity-100 shadow-lg">
-					<LottiePlayer lottieFile={SearchResultsLottie} />
+					<LottieSvelte src={SearchResultsLottie} />
 				</div>
 			{:else if currentTab == featureList[1]}
-				<div class="">
-					<LottiePlayer lottieFile={ExtensionLottie} />
+				<div class="overflow-hidden rounded-l-lg opacity-100 shadow-lg">
+					<LottieSvelte src={ExtensionLottie} />
 				</div>
 			{/if}
 		</div>
