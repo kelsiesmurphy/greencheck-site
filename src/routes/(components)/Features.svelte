@@ -44,7 +44,7 @@
 					<LottiePlayer lottieFile={SearchResultsLottie} />
 				</div>
 			{:else if currentTab == featureList[1]}
-				<div class="">
+				<div class="overflow-hidden rounded-l-lg opacity-100 shadow-lg">
 					<LottiePlayer lottieFile={ExtensionLottie} />
 				</div>
 			{/if}
