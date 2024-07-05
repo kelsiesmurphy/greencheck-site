@@ -43,7 +43,6 @@
 	"dependencies": {
 		"bits-ui": "^0.21.11",
 		"clsx": "^2.1.1",
-		"lottie-player-svelte": "^0.5.3",
 		"lucide-svelte": "^0.399.0",
 		"tailwind-merge": "^2.3.0",
 		"tailwind-variants": "^0.2.1"
