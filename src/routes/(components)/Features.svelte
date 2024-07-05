@@ -1,9 +1,4 @@
 <script lang="ts">
-	import { LottieSvelte } from 'lottie-player-svelte';
-
-	import SearchResultsLottie from '$lib/assets/SearchResultsLottie.json';
-	import ExtensionLottie from '$lib/assets/ExtensionLottie.json';
-
 	const featureList = [
 		{
 			title: 'See green-hosted websites at a glance',
@@ -41,11 +36,33 @@
 		>
 			{#if currentTab == featureList[0]}
 				<div class="overflow-hidden rounded-l-lg opacity-100 shadow-lg">
-					<LottieSvelte src={SearchResultsLottie} />
+					<div>
+						<script
+							src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs"
+							type="module"
+						></script>
+						<dotlottie-player
+							src="https://lottie.host/1f5a167c-e913-430a-acd2-6b6ca3a83ad8/Zmfp4UGK1M.json"
+							background="transparent"
+							loop
+							autoplay
+						></dotlottie-player>
+					</div>
 				</div>
 			{:else if currentTab == featureList[1]}
 				<div class="overflow-hidden rounded-l-lg opacity-100 shadow-lg">
-					<LottieSvelte src={ExtensionLottie} />
+					<div>
+						<script
+							src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs"
+							type="module"
+						></script>
+						<dotlottie-player
+							src="https://lottie.host/b370d175-c82d-4546-8319-ab2fe671b727/sfl19Agj7T.json"
+							background="transparent"
+							loop
+							autoplay
+						></dotlottie-player>
+					</div>
 				</div>
 			{/if}
 		</div>
