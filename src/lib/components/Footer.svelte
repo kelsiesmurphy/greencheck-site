@@ -8,12 +8,12 @@
 			link: '/'
 		},
 		{
-			title: 'About Us',
-			link: '/about'
+			title: 'Instructions',
+			link: '/instructions'
 		},
 		{
-			title: 'Pricing',
-			link: '/pricing'
+			title: 'Manage Licenses',
+			link: '/my-license'
 		},
 		{
 			title: 'Sustainability',
