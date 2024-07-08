@@ -3,8 +3,7 @@
 	import * as Card from '$lib/components/ui/card';
 	import Checkmark from '$lib/assets/checkmark.svg';
 	import Zap from '$lib/assets/zap.svg';
-	import { ShoppingBag } from 'lucide-svelte';
-    
+	import content from '$lib/content.json';
 
 	const featureList = [
 		{
@@ -35,17 +34,17 @@
 		<ul class="max-w-xl space-y-12 md:pt-6">
 			{#each featureList as feature}
 				<li class="flex gap-4">
-					<div class="border-secondary rounded-md border flex p-3 h-12 aspect-square">
+					<div class="flex aspect-square h-12 rounded-md border border-secondary p-3">
 						<img src={feature.icon} alt="" class="h-6 w-6" />
 					</div>
 					<div class="space-y-2">
 						<h3 class="text-lg font-semibold md:text-xl">{feature.title}</h3>
-						<p class="text-muted-foreground text-left">{feature.description}</p>
+						<p class="text-left text-muted-foreground">{feature.description}</p>
 					</div>
 				</li>
 			{/each}
 		</ul>
-		<Card.Root class="max-w-xl min-w-[280px] flex-1 shadow-lg">
+		<Card.Root class="min-w-[280px] max-w-xl flex-1 shadow-lg">
 			<Card.Header class="flex-row justify-between">
 				<div>
 					<Card.Title class="text-2xl">Plus</Card.Title>
@@ -62,7 +61,7 @@
 					<h4 class="font-semibold">Features</h4>
 					<p class="text-muted-foreground">Everything in <b>basic</b>, plus...</p>
 				</div>
-				<ul class="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-4">
+				<ul class="grid grid-cols-1 gap-x-8 gap-y-4 sm:grid-cols-2">
 					{#each pricingCardList as text}
 						<li class="flex gap-4">
 							<img src={Checkmark} class="h-6 w-6" alt="Checkmark" />
@@ -73,7 +72,7 @@
 			</Card.Content>
 			<hr />
 			<Card.Footer class="py-8">
-				<Button class="w-full">Get plus</Button>
+				<Button href={content.gumroadLink} target="_blank" class="w-full">Get plus</Button>
 			</Card.Footer>
 		</Card.Root>
 	</div>
