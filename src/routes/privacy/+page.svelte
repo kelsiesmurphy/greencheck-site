@@ -1,5 +1,5 @@
 <script lang="ts">
-    import Header from "$lib/components/Header.svelte"
+	import Header from '$lib/components/Header.svelte';
 	import { onMount } from 'svelte';
 	let privacyContent = '';
 
@@ -16,10 +16,10 @@
 </script>
 
 <svelte:head>
-	<title>Privacy Policy</title>
+	<title>Privacy Policy | GreenCheck</title>
 </svelte:head>
 
 <div>
-    <Header />
-    <div class="privacy-policy" bind:this={privacyContainer}></div>
+	<Header />
+	<div class="privacy-policy" bind:this={privacyContainer}></div>
 </div>

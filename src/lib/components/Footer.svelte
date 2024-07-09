@@ -13,7 +13,7 @@
 		},
 		{
 			title: 'Manage Licenses',
-			link: '/my-license'
+			link: '/manage-licenses'
 		},
 		{
 			title: 'Privacy',
@@ -27,7 +27,7 @@
 		<Button variant="link" href="/"><img src={Logomark} alt="Greencheck logo" /></Button>
 		<ul class="grid grid-cols-2 justify-center sm:flex sm:flex-wrap">
 			{#each [...footerItems.values()] as value}
-				<li>
+				<li class="list-none">
 					<Button href={value.link} variant="ghost">{value.title}</Button>
 				</li>
 			{/each}

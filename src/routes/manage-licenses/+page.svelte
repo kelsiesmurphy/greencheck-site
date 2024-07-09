@@ -6,6 +6,10 @@
 	export let data: PageData;
 </script>
 
+<svelte:head>
+	<title>My Licenses | GreenCheck</title>
+</svelte:head>
+
 <main class="flex flex-1 flex-col">
 	<Header />
 	<section class="flex flex-1 flex-col gap-4 space-y-16 py-16 pt-32 sm:pt-16">
