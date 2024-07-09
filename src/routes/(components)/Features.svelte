@@ -2,17 +2,25 @@
 	const featureList = [
 		{
 			title: 'See green-hosted websites at a glance',
+			lottieLink: 'https://lottie.host/1f5a167c-e913-430a-acd2-6b6ca3a83ad8/Zmfp4UGK1M.json',
 			description:
 				'Whether you have a team of 2 or 200, our shared team inboxes keep everyone on the same page and in the loop.'
 		},
 		{
 			title: 'Check to see if a website is hosted sustainably',
+			lottieLink: 'https://lottie.host/b370d175-c82d-4546-8319-ab2fe671b727/sfl19Agj7T.json',
 			description:
 				'Whether you have a team of 2 or 200, our shared team inboxes keep everyone on the same page and in the loop.'
 		}
 	];
 
 	let currentTab = featureList[0];
+
+	let lottiePlayer: { load: (arg: string) => void };
+
+	$: if (lottiePlayer) {
+		lottiePlayer.load(currentTab.lottieLink);
+	}
 </script>
 
 <section class="space-y-16 py-24">
@@ -34,37 +42,21 @@
 		<div
 			class="flex aspect-[592/528] min-w-[300px] max-w-xl flex-1 items-center justify-end bg-gray-100 p-4 sm:p-12"
 		>
-			{#if currentTab == featureList[0]}
-				<div class="overflow-hidden rounded-lg opacity-100 shadow-lg">
-					<div>
-						<script
-							src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs"
-							type="module"
-						></script>
-						<dotlottie-player
-							src="https://lottie.host/1f5a167c-e913-430a-acd2-6b6ca3a83ad8/Zmfp4UGK1M.json"
-							background="transparent"
-							loop
-							autoplay
-						></dotlottie-player>
-					</div>
+			<div class="overflow-hidden rounded-lg opacity-100 shadow-lg">
+				<div>
+					<script
+						src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs"
+						type="module"
+					></script>
+					<dotlottie-player
+						bind:this={lottiePlayer}
+						src={currentTab.lottieLink}
+						background="transparent"
+						loop
+						autoplay
+					></dotlottie-player>
 				</div>
-			{:else if currentTab == featureList[1]}
-				<div class="overflow-hidden rounded-lg opacity-100 shadow-lg">
-					<div>
-						<script
-							src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs"
-							type="module"
-						></script>
-						<dotlottie-player
-							src="https://lottie.host/b370d175-c82d-4546-8319-ab2fe671b727/sfl19Agj7T.json"
-							background="transparent"
-							loop
-							autoplay
-						></dotlottie-player>
-					</div>
-				</div>
-			{/if}
+			</div>
 		</div>
 	</div>
 </section>

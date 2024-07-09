@@ -1,20 +1,15 @@
 <script lang="ts">
+	import Footer from '$lib/components/Footer.svelte';
+	import { Toaster } from '$lib/components/ui/sonner';
 	import '../app.css';
 </script>
 
-<slot></slot>
+<svelte:head>
+	<title>GreenCheck | Empowering Greener Browsing, One Click at a Time</title>
+</svelte:head>
 
-
-
-
-<!-- placeholder:
- 
-<script lang="ts">
-	
-</script>
-
-<section class="py-24">
-	
-</section> 
-
--->
+<div class="container flex min-h-screen flex-col">
+	<Toaster />
+	<slot></slot>
+	<Footer />
+</div>

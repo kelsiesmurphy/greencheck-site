@@ -8,28 +8,16 @@
 			link: '/'
 		},
 		{
-			title: 'About Us',
-			link: '/about'
+			title: 'Instructions',
+			link: '/instructions'
 		},
 		{
-			title: 'Pricing',
-			link: '/pricing'
-		},
-		{
-			title: 'Sustainability',
-			link: '/sustainability'
-		},
-		{
-			title: 'Terms',
-			link: '/terms'
+			title: 'Manage Licenses',
+			link: '/manage-licenses'
 		},
 		{
 			title: 'Privacy',
 			link: '/privacy'
-		},
-		{
-			title: 'Cookies',
-			link: '/cookies'
 		}
 	];
 </script>
@@ -39,7 +27,7 @@
 		<Button variant="link" href="/"><img src={Logomark} alt="Greencheck logo" /></Button>
 		<ul class="grid grid-cols-2 justify-center sm:flex sm:flex-wrap">
 			{#each [...footerItems.values()] as value}
-				<li>
+				<li class="list-none">
 					<Button href={value.link} variant="ghost">{value.title}</Button>
 				</li>
 			{/each}
@@ -49,9 +37,7 @@
 			<div class="text-muted-foreground flex items-center flex-wrap-reverse justify-between gap-6 text-xs outline-brand">
 				<p>© 2024 GreenCheck. All rights reserved.</p>
 				<div class="flex gap-1">
-					<Button variant="link" size="sm" href="/terms" class="hover:underline text-muted-foreground text-xs">Terms</Button>
 					<Button variant="link" size="sm" href="/privacy" class="hover:underline text-muted-foreground text-xs">Privacy</Button>
-					<Button variant="link" size="sm" href="/cookies" class="hover:underline text-muted-foreground text-xs">Cookies</Button>
 				</div>
 			</div>
 		</div>

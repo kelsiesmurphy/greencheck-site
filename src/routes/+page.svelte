@@ -5,15 +5,14 @@
 	import Features from './(components)/Features.svelte';
 	import Pricing from './(components)/Pricing.svelte';
 	import FAQs from './(components)/FAQs.svelte';
-	import Footer from './(components)/Footer.svelte';
 	import HeaderMobile from './(components)/HeaderMobile.svelte';
 </script>
 
-<main class="container min-h-screen">
-	<div class="hidden md:flex">
+<main>
+	<div class="hidden sm:flex">
 		<Header />
 	</div>
-	<div class="flex md:hidden">
+	<div>
 		<HeaderMobile />
 	</div>
 	<Hero />
@@ -21,5 +20,4 @@
 	<Features />
 	<Pricing />
 	<FAQs />
-	<Footer />
 </main>

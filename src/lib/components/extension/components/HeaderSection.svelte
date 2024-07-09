@@ -13,7 +13,7 @@
 	<div class="flex gap-1">
 		<Tooltip.Root>
 			<Tooltip.Trigger>
-				<Button variant="ghost" size="icon" class="hover:bg-emerald-900 hover:text-white">
+				<Button disabled variant="ghost" size="icon" class="hover:bg-emerald-900 hover:text-white">
 					<div>
 						<Settings2 class="h-4 w-4" />
 					</div>
