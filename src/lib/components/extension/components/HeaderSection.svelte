@@ -10,7 +10,7 @@
 	class="flex items-center justify-between bg-emerald-800 px-6 py-4 text-xl font-medium text-white"
 >
 	<img src={Logomark} alt="" />
-	<div class="flex gap-1">
+	<!-- <div class="flex gap-1">
 		<Tooltip.Root>
 			<Tooltip.Trigger>
 				<Button disabled variant="ghost" size="icon" class="hover:bg-emerald-900 hover:text-white">
@@ -23,6 +23,6 @@
 				<p>Options</p>
 			</Tooltip.Content>
 		</Tooltip.Root>
-		<!-- <ModeToggle /> -->
-	</div>
+		<ModeToggle />
+	</div> -->
 </div>

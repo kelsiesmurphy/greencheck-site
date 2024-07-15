@@ -4,13 +4,13 @@
 			title: 'See green-hosted websites at a glance',
 			lottieLink: 'https://lottie.host/1f5a167c-e913-430a-acd2-6b6ca3a83ad8/Zmfp4UGK1M.json',
 			description:
-				'Whether you have a team of 2 or 200, our shared team inboxes keep everyone on the same page and in the loop.'
+				'Google Search results will show an 🌱 icon next to websites hosted with green energy and provide supporting documentation from The Green Web Foundation.'
 		},
 		{
 			title: 'Check to see if a website is hosted sustainably',
 			lottieLink: 'https://lottie.host/b370d175-c82d-4546-8319-ab2fe671b727/sfl19Agj7T.json',
 			description:
-				'Whether you have a team of 2 or 200, our shared team inboxes keep everyone on the same page and in the loop.'
+				"To check if a website runs on green energy, open the extension from your browser's navigation bar, and it will inform you."
 		}
 	];
 

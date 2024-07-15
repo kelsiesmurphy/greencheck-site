@@ -21,7 +21,7 @@
 	});
 </script>
 
-<div class="fixed left-0 top-0 w-full">
+<div class="fixed left-0 z-10 top-0 w-full">
 	<nav
 		class="flex items-center justify-between bg-background p-4 transition-all"
 		class:scrolled={$scrolled}
