@@ -2,21 +2,21 @@
 	import { Button } from '$lib/components/ui/button';
 	import * as Card from '$lib/components/ui/card';
 	import Checkmark from '$lib/assets/checkmark.svg';
-	import Zap from '$lib/assets/zap.svg';
 	import content from '$lib/content.json';
+	import { FileBarChart2, Sprout, TextSearch } from 'lucide-svelte';
 
 	const featureList = [
 		{
-			title: 'See green-hosted websites at a glance',
+			title: 'Carbon Analysis',
 			description:
-				'Whether you have a team of 2 or 200, our shared team inboxes keep everyone on the same page and in the loop.',
-			icon: Zap
+				'Get predicted carbon emissions data on the website you\'re visiting, using the size of the website and an estimate of the carbon emissions produced to move that data over the internet.',
+			icon: FileBarChart2
 		},
 		{
-			title: 'Check to see if a website is hosted sustainably',
+			title: 'Point 2',
 			description:
-				'Whether you have a team of 2 or 200, our shared team inboxes keep everyone on the same page and in the loop.',
-			icon: Zap
+				'Lorum Ipsum',
+			icon: Sprout
 		}
 	];
 
@@ -35,7 +35,11 @@
 			{#each featureList as feature}
 				<li class="flex gap-4">
 					<div class="flex aspect-square h-12 rounded-md border border-secondary p-3">
-						<img src={feature.icon} alt="" class="h-6 w-6" />
+						{#if feature.icon === FileBarChart2}
+							<FileBarChart2 class="h-6 w-6" />
+						{:else if feature.icon === Sprout}
+							<Sprout class="h-6 w-6" />
+						{/if}
 					</div>
 					<div class="space-y-2">
 						<h3 class="text-lg font-semibold md:text-xl">{feature.title}</h3>
