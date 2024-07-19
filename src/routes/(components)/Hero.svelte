@@ -3,6 +3,7 @@
 	import { Globe, ShoppingCart } from 'lucide-svelte';
 	import Extension from '$lib/components/extension/extension.svelte';
 	import content from '$lib/content.json';
+	import { sendGumroadLog } from '$lib/utils/logs';
 </script>
 
 <section class="flex flex-wrap items-center justify-around gap-16 py-16 pt-40">
@@ -17,12 +18,19 @@
 			</p>
 		</div>
 		<div class="flex flex-col gap-3 sm:flex-row">
-			<Button href={content.chromeStoreLink} target="_blank" variant="secondary"
-				><Globe class="mr-2 h-4 w-4" />Get Basic for free</Button
+			<Button
+				on:click={() => sendGumroadLog('chrome', 'Get Basic for free in Hero section')}
+				href={content.chromeStoreLink}
+				target="_blank"
+				variant="secondary"><Globe class="mr-2 h-4 w-4" />Get Basic for free</Button
 			>
-			<Button href={content.gumroadLink} target="_blank"
-				><ShoppingCart class="mr-2 h-4 w-4" />Get Plus for £{content.price}</Button
+			<Button
+				href={content.gumroadLink}
+				target="_blank"
+				on:click={() => sendGumroadLog('gumroad', 'Gumroad Button in Hero section')}
 			>
+				<ShoppingCart class="mr-2 h-4 w-4" />Get Plus for £30
+			</Button>
 		</div>
 	</div>
 	<Extension />

@@ -5,7 +5,7 @@
 	import { onMount } from 'svelte';
 	import { writable } from 'svelte/store';
 	import content from '$lib/content.json';
-	import GumroadButton from '$lib/components/GumroadButton.svelte';
+	import { sendGumroadLog } from '$lib/utils/logs';
 
 	let scrolled = writable(false);
 
@@ -32,10 +32,21 @@
 		</div>
 		{#if $scrolled}
 			<div class="flex flex-col gap-3 sm:flex-row">
-				<Button href={content.chromeStoreLink} target="_blank" variant="secondary"
-					><Globe class="mr-2 h-4 w-4" />Get Basic for free</Button
+				<Button
+					href={content.chromeStoreLink}
+					on:click={() =>
+						sendGumroadLog('chrome', 'Get Basic for free in scrolled header on landing page')}
+					target="_blank"
+					variant="secondary"><Globe class="mr-2 h-4 w-4" />Get Basic for free</Button
 				>
-				<GumroadButton />
+				<Button
+					href={content.gumroadLink}
+					target="_blank"
+					on:click={() =>
+						sendGumroadLog('gumroad', 'Gumroad Button in scrolled header on landing page')}
+				>
+					<ShoppingCart class="mr-2 h-4 w-4" />Get Plus for £30
+				</Button>
 			</div>
 		{/if}
 	</nav>

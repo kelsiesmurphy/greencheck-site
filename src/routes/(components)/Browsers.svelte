@@ -6,6 +6,7 @@
 	import EdgeLogo from '$lib/assets/edge.svg';
 	import { Button } from '$lib/components/ui/button';
 	import content from '$lib/content.json';
+	import { sendGumroadLog } from '$lib/utils/logs';
 
 	const browserList = [
 		{ name: 'Chrome', image: ChromeLogo, link: content.chromeStoreLink },
@@ -29,7 +30,7 @@
 			<li class="flex max-w-sm flex-1 flex-col items-center justify-center gap-4">
 				<img src={browser.image} alt={`Logo for the ${browser.name} browser.`} class="h-16 w-16" />
 				<h3 class="text-center text-lg font-semibold md:text-xl">{browser.name}</h3>
-				<Button href={browser.link} variant="link" target="_blank">
+				<Button href={browser.link} on:click={() => sendGumroadLog(browser.name.toLowerCase(), `Link for ${browser.name} in Browser section`)} variant="link" target="_blank">
 					View details
 					<ArrowRight class="ml-2 h-4 w-4" />
 				</Button>
