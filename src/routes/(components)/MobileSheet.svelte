@@ -5,6 +5,7 @@
 
 	import Logomark from '$lib/assets/Logomark.svg';
 	import { Button, buttonVariants } from '$lib/components/ui/button';
+	import GumroadButton from '$lib/components/GumroadButton.svelte';
 </script>
 
 <Sheet.Root>
@@ -18,8 +19,10 @@
 			</Sheet.Title>
 		</Sheet.Header>
 		<div class="flex flex-col gap-3">
-			<Button href={content.chromeStoreLink} target="_blank" variant="secondary"><Globe class="mr-2 h-4 w-4" />Get Basic for free</Button>
-			<Button href={content.chromeStoreLink} target="_blank"><ShoppingCart class="mr-2 h-4 w-4" />Get Plus for £30</Button>
+			<Button href={content.chromeStoreLink} target="_blank" variant="secondary"
+				><Globe class="mr-2 h-4 w-4" />Get Basic for free</Button
+			>
+			<GumroadButton />
 		</div>
 	</Sheet.Content>
 </Sheet.Root>

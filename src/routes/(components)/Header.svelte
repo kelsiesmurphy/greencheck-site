@@ -5,6 +5,7 @@
 	import { onMount } from 'svelte';
 	import { writable } from 'svelte/store';
 	import content from '$lib/content.json';
+	import GumroadButton from '$lib/components/GumroadButton.svelte';
 
 	let scrolled = writable(false);
 
@@ -21,7 +22,7 @@
 	});
 </script>
 
-<div class="fixed left-0 z-10 top-0 w-full">
+<div class="fixed left-0 top-0 z-10 w-full">
 	<nav
 		class="flex items-center justify-between bg-background p-4 transition-all"
 		class:scrolled={$scrolled}
@@ -34,9 +35,7 @@
 				<Button href={content.chromeStoreLink} target="_blank" variant="secondary"
 					><Globe class="mr-2 h-4 w-4" />Get Basic for free</Button
 				>
-				<Button href={content.gumroadLink} target="_blank"
-					><ShoppingCart class="mr-2 h-4 w-4" />Get Plus for £30</Button
-				>
+				<GumroadButton />
 			</div>
 		{/if}
 	</nav>

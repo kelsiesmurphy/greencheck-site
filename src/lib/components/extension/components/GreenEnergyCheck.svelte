@@ -7,8 +7,8 @@
 	const loading = false;
 	const greenHost = {
 		green: true,
-		hosted_by: 'Placeholder',
-		hosted_by_website: 'Placeholder'
+		hosted_by: 'GreenHost',
+		hosted_by_website: '#'
 	};
 </script>
 

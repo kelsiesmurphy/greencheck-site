@@ -1,9 +1,10 @@
 <script lang="ts">
 	import Logomark from '$lib/assets/Logomark.svg';
 	import { Button } from '$lib/components/ui/button';
-	import { Globe, ShoppingCart } from 'lucide-svelte';
+	import { Globe } from 'lucide-svelte';
 	import HeaderMobile from '../../routes/(components)/HeaderMobile.svelte';
 	import content from '$lib/content.json';
+	import GumroadButton from './GumroadButton.svelte';
 </script>
 
 <div>
@@ -15,9 +16,7 @@
 			<Button href={content.chromeStoreLink} target="_blank" variant="secondary"
 				><Globe class="mr-2 h-4 w-4" />Get Basic for free</Button
 			>
-			<Button href={content.gumroadLink} target="_blank"
-				><ShoppingCart class="mr-2 h-4 w-4" />Get Plus for £30</Button
-			>
+			<GumroadButton />
 		</div>
 	</nav>
 	<HeaderMobile />
