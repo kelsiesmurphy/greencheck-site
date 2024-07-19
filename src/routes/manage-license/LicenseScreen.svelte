@@ -3,6 +3,8 @@
 	import { KeyRound } from 'lucide-svelte';
 	import DeactivateButton from './DeactivateButton.svelte';
 	export let apiResponse;
+
+	console.log(apiResponse)
 </script>
 
 <Card.Root class="max-w-2xl flex-1 rounded-xl">
