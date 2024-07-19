@@ -12,8 +12,8 @@
 			link: '/instructions'
 		},
 		{
-			title: 'Manage Licenses',
-			link: '/manage-licenses'
+			title: 'Manage License',
+			link: '/manage-license'
 		},
 		{
 			title: 'Privacy',
