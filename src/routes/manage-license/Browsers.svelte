@@ -1,5 +1,4 @@
 <script lang="ts">
-	import Badge from '$lib/components/ui/badge/badge.svelte';
 	import { ArrowRight } from 'lucide-svelte';
 	import ChromeLogo from '$lib/assets/chrome.svg';
 	import FirefoxLogo from '$lib/assets/firefox.svg';
