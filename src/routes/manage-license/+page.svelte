@@ -2,6 +2,7 @@
 	import Header from '$lib/components/Header.svelte';
 	import LicenseForm from './LicenseForm.svelte';
 	import type { PageData } from './$types.js';
+	import Browsers from './Browsers.svelte';
 
 	export let data: PageData;
 </script>
@@ -19,5 +20,6 @@
 		<div class="flex flex-1 justify-center">
 			<LicenseForm {data} />
 		</div>
+		<Browsers />
 	</section>
 </main>

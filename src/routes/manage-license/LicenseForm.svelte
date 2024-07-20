@@ -55,19 +55,25 @@
 </script>
 
 <div class="flex flex-1 justify-center gap-12">
-	{#if !apiResponse}
+	{#if apiResponse && apiResponse.success == true}
+		<LicenseScreen {apiResponse} />
+	{:else if apiResponse && apiResponse.success == false}
+		<p>{apiResponse.message}</p>
+	{:else}
 		<form method="POST" use:enhance class="max-w-sm flex-1">
 			<Form.Field {form} name="license_key">
 				<Form.Control let:attrs>
 					<Form.Label>License Key</Form.Label>
-					<Input {...attrs} bind:value={$formData.license_key} />
+					<Input
+						{...attrs}
+						placeholder="XXXXXXXX-XXXXXXXX-XXXXXXXX-XXXXXXXX"
+						bind:value={$formData.license_key}
+					/>
 				</Form.Control>
-				<Form.Description>This is your public display name.</Form.Description>
+				<Form.Description>This is the license key sent to by email.</Form.Description>
 				<Form.FieldErrors />
 			</Form.Field>
 			<Form.Button>Submit</Form.Button>
 		</form>
-	{:else}
-		<LicenseScreen apiResponse={apiResponse}/>
 	{/if}
 </div>
