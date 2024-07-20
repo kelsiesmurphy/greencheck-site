@@ -4,18 +4,18 @@
 	import Checkmark from '$lib/assets/checkmark.svg';
 	import content from '$lib/content.json';
 	import { FileBarChart2, Sprout, TextSearch } from 'lucide-svelte';
+	import { sendGumroadLog } from '$lib/utils/logs';
 
 	const featureList = [
 		{
 			title: 'Carbon Analysis',
 			description:
-				'Get predicted carbon emissions data on the website you\'re visiting, using the size of the website and an estimate of the carbon emissions produced to move that data over the internet.',
+				"Get predicted carbon emissions data on the website you're visiting, using the size of the website and an estimate of the carbon emissions produced to move that data over the internet.",
 			icon: FileBarChart2
 		},
 		{
 			title: 'Point 2',
-			description:
-				'Lorum Ipsum',
+			description: 'Lorum Ipsum',
 			icon: Sprout
 		}
 	];
@@ -76,7 +76,12 @@
 			</Card.Content>
 			<hr />
 			<Card.Footer class="py-8">
-				<Button href={content.gumroadLink} target="_blank" class="w-full">Get plus</Button>
+				<Button
+					href={content.gumroadLink}
+					on:click={() => sendGumroadLog('gumroad', 'Gumroad Get plus button in Pricing Card')}
+					target="_blank"
+					class="w-full">Get plus</Button
+				>
 			</Card.Footer>
 		</Card.Root>
 	</div>

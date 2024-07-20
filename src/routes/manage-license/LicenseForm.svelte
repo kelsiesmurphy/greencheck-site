@@ -6,17 +6,18 @@
 	import { formSchema } from './schema';
 	import { superForm } from 'sveltekit-superforms';
 	import { zodClient } from 'sveltekit-superforms/adapters';
+	import LicenseScreen from './LicenseScreen.svelte';
 
 	export let data: PageData;
 
 	let loading = false;
-	let apiResponse: unknown = null;
+	let apiResponse: any = null;
 
 	const getLicenseInfo = async (licenseKey: string) => {
 		const product_id = '1lMFu-kYVe1oKzAajE6uvg==';
 		try {
 			loading = true;
-			const response = await fetch('https://api.gumroad.com/v2/licenses/verify', {
+			const response: any = await fetch('https://api.gumroad.com/v2/licenses/verify', {
 				method: 'POST',
 				headers: {
 					'Content-Type': 'application/x-www-form-urlencoded'
@@ -54,20 +55,25 @@
 </script>
 
 <div class="flex flex-1 justify-center gap-12">
-	<form method="POST" use:enhance class="max-w-sm flex-1">
-		<Form.Field {form} name="license_key">
-			<Form.Control let:attrs>
-				<Form.Label>License Key</Form.Label>
-				<Input {...attrs} bind:value={$formData.license_key} />
-			</Form.Control>
-			<Form.Description>This is your public display name.</Form.Description>
-			<Form.FieldErrors />
-		</Form.Field>
-		<Form.Button>Submit</Form.Button>
-
-		<div class="api-response">
-			<h2>API Response:</h2>
-			<pre>{JSON.stringify(apiResponse, null, 2)}</pre>
-		</div>
-	</form>
+	{#if apiResponse && apiResponse.success == true}
+		<LicenseScreen {apiResponse} />
+	{:else if apiResponse && apiResponse.success == false}
+		<p>{apiResponse.message}</p>
+	{:else}
+		<form method="POST" use:enhance class="max-w-sm flex-1">
+			<Form.Field {form} name="license_key">
+				<Form.Control let:attrs>
+					<Form.Label>License Key</Form.Label>
+					<Input
+						{...attrs}
+						placeholder="XXXXXXXX-XXXXXXXX-XXXXXXXX-XXXXXXXX"
+						bind:value={$formData.license_key}
+					/>
+				</Form.Control>
+				<Form.Description>This is the license key sent to by email.</Form.Description>
+				<Form.FieldErrors />
+			</Form.Field>
+			<Form.Button>Submit</Form.Button>
+		</form>
+	{/if}
 </div>
