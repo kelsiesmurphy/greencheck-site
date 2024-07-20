@@ -11,7 +11,7 @@
 	export let data: PageData;
 
 	let loading = false;
-	let apiResponse: unknown = null;
+	let apiResponse: any = null;
 
 	const getLicenseInfo = async (licenseKey: string) => {
 		const product_id = '1lMFu-kYVe1oKzAajE6uvg==';
