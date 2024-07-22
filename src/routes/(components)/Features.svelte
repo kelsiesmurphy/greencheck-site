@@ -63,7 +63,7 @@
 				</li>
 			{/each}
 		</ul>
-		<div class="min-w-[300px] max-w-xl flex-1 items-center justify-end">
+		<div class="min-w-[300px] max-w-xl flex-1 flex items-center justify-end">
 			<img src={currentTab.gifLink} alt={`Animated GIF for ${currentTab.title}`} />
 		</div>
 	</div>

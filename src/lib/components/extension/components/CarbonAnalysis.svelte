@@ -17,7 +17,7 @@
 		</Card.Description>
 	</Card.Header>
 	<Card.Content>
-		<Button>
+		<Button class="bg-[#121826] hover:bg-[#121826]/90">
 			{#if loading}
 				<div>
 					<LoaderCircle class="mr-2 h-4 w-4 animate-spin" />{' '}

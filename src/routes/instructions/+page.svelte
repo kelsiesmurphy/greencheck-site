@@ -56,7 +56,7 @@
 	<section class="flex flex-1 flex-col gap-4 space-y-16 py-16 pt-32 sm:pt-16">
 		<div class="flex flex-col items-center justify-center gap-4">
 			<h1 class="text-center text-3xl font-semibold sm:text-4xl">Thank you!</h1>
-			<p class="text-center max-w-xl text-muted-foreground">Thank you for using GreenCheck! Since this extension is supported by multiple web browsers, we have instructions for each browser below. If your browser is not on the list, reach out to <a href="mailto:greenchecksupport@proton.me">greenchecksupport@proton.me</a> to request it!</p>
+			<p class="text-center max-w-xl text-muted-foreground">Thank you for using GreenCheck! Since this extension is supported by multiple web browsers, we have instructions for each browser below. If your browser is not on the list, reach out to <a class="underline" href="mailto:greenchecksupport@proton.me">greenchecksupport@proton.me</a> to request it!</p>
 		</div>
 		<Tabs tabs={browserList} />
 	</section>
