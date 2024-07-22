@@ -3,7 +3,7 @@
 	import { Globe, Menu, ShoppingCart } from 'lucide-svelte';
 	import content from '$lib/content.json';
 
-	import logomark from '$lib/assets/logomark.svg';
+	import Logomark from '$lib/assets/Logomark.svg';
 	import { Button, buttonVariants } from '$lib/components/ui/button';
 	import { sendGumroadLog } from '$lib/utils/logs';
 </script>
@@ -15,7 +15,7 @@
 	<Sheet.Content side="right" class="">
 		<Sheet.Header class="pb-12">
 			<Sheet.Title>
-				<a href="/"><img src={logomark} alt="Greencheck logo" /></a>
+				<a href="/"><img src={Logomark} alt="Greencheck logo" /></a>
 			</Sheet.Title>
 		</Sheet.Header>
 		<div class="flex flex-col gap-3">
