@@ -1,62 +1,70 @@
 <script lang="ts">
+	import { Badge } from '$lib/components/ui/badge/index.js';
+	import content from '$lib/content.json';
+
 	const featureList = [
 		{
 			title: 'See green-hosted websites at a glance',
-			lottieLink: 'https://lottie.host/1f5a167c-e913-430a-acd2-6b6ca3a83ad8/Zmfp4UGK1M.json',
+			premium: false,
+			gifLink:
+				'https://vhzqiumeoyudnxmuhyvz.supabase.co/storage/v1/object/public/marketing/green-search.gif?t=2024-07-22T16%3A04%3A57.578Z',
 			description:
 				'Google Search results will show an 🌱 icon next to websites hosted with green energy and provide supporting documentation from The Green Web Foundation.'
 		},
 		{
 			title: 'Check to see if a website is hosted sustainably',
-			lottieLink: 'https://lottie.host/b370d175-c82d-4546-8319-ab2fe671b727/sfl19Agj7T.json',
+			premium: false,
+			gifLink:
+				'https://vhzqiumeoyudnxmuhyvz.supabase.co/storage/v1/object/public/marketing/green-energy-check.gif?t=2024-07-22T16%3A05%3A35.639Z',
 			description:
 				"To check if a website runs on green energy, open the extension from your browser's navigation bar, and it will inform you."
+		},
+		{
+			title: 'Carbon Analysis',
+			premium: true,
+			gifLink:
+				'https://vhzqiumeoyudnxmuhyvz.supabase.co/storage/v1/object/public/marketing/carbon-analysis.gif?t=2024-07-22T15%3A34%3A39.677Z',
+			description:
+				"With a valid license key, scan the website you're on for realtime information on the CO2 output each time the page is loaded, the calculated energy used to load the page, a ranking given to the webpage compared to all web pages globally."
+		},
+		{
+			title: 'Carbon Footer',
+			premium: true,
+			gifLink:
+				'https://vhzqiumeoyudnxmuhyvz.supabase.co/storage/v1/object/public/marketing/carbon-footer.gif?t=2024-07-22T16%3A27%3A07.486Z',
+			description:
+				'To each web-pages footer, a widget will be added telling you at a glance the carbon output of the page.'
 		}
 	];
 
 	let currentTab = featureList[0];
-
-	let lottiePlayer: { load: (arg: string) => void };
-
-	$: if (lottiePlayer) {
-		lottiePlayer.load(currentTab.lottieLink);
-	}
 </script>
 
 <section class="space-y-16 py-24">
-	<h2 class="text-3xl font-semibold md:text-4xl">Free Features</h2>
+	<h2 class="text-3xl font-semibold md:text-4xl">Key Features</h2>
 	<div class="flex flex-wrap justify-center gap-16">
 		<ul class="max-w-xl">
 			{#each featureList as feature}
 				<li>
 					<button
 						on:click={() => (currentTab = feature)}
-						class={`${currentTab == feature ? 'border-primary' : 'border-secondary'} outline-brand flex flex-col gap-2 border-l-4 px-6 py-8 transition-colors duration-300`}
+						class={`${currentTab == feature ? 'border-primary' : 'border-secondary'} outline-brand flex flex-col gap-2 border-l-4 px-6 py-4 transition-colors duration-300`}
 					>
-						<h3 class="text-lg font-semibold md:text-xl">{feature.title}</h3>
+						<div class="flex items-center gap-4">
+							<h3 class="text-lg font-semibold md:text-xl">
+								{feature.title}
+							</h3>
+							{#if feature.premium}
+								<Badge href={content.gumroadLink} target="_blank">GreenCheck Plus</Badge>
+							{/if}
+						</div>
 						<p class="text-left text-muted-foreground">{feature.description}</p>
 					</button>
 				</li>
 			{/each}
 		</ul>
-		<div
-			class="flex aspect-[592/528] min-w-[300px] max-w-xl flex-1 items-center justify-end bg-gray-100 p-4 sm:p-12"
-		>
-			<div class="overflow-hidden rounded-lg opacity-100 shadow-lg">
-				<div>
-					<script
-						src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs"
-						type="module"
-					></script>
-					<dotlottie-player
-						bind:this={lottiePlayer}
-						src={currentTab.lottieLink}
-						background="transparent"
-						loop
-						autoplay
-					></dotlottie-player>
-				</div>
-			</div>
+		<div class="min-w-[300px] max-w-xl flex-1 items-center justify-end">
+			<img src={currentTab.gifLink} alt={`Animated GIF for ${currentTab.title}`} />
 		</div>
 	</div>
 </section>
