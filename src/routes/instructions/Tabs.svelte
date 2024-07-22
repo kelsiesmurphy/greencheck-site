@@ -20,7 +20,7 @@
 						</div>
 						<div class="space-y-2">
 							<h3 class="text-lg font-semibold md:text-xl">{tab.name}</h3>
-							<ul class="text-left text-muted-foreground list-decimal list-inside space-y-2">
+							<ul class="list-inside list-decimal space-y-2 text-left text-muted-foreground">
 								{#each tab.instructions_list as instruction}
 									<li>{@html instruction}</li>
 								{/each}

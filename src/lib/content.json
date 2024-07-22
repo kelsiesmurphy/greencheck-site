@@ -1,7 +1,7 @@
 {
-    "price": 15,
-    "gumroadLink": "https://greencheck.gumroad.com/l/greencheck",
-    "chromeStoreLink": "https://chromewebstore.google.com/detail/greencheck/higoeedlibiodackgafaighadodofjja?authuser=0&hl=en",
-    "firefoxStoreLink": "https://addons.mozilla.org/en-GB/firefox/addon/greencheck/",
-    "edgeStoreLink": "https://microsoftedge.microsoft.com/addons/detail/greencheck/lemnlcgcdeldjpgfaajgjfefohadnaid"
+	"price": 15,
+	"gumroadLink": "https://greencheck.gumroad.com/l/greencheck",
+	"chromeStoreLink": "https://chromewebstore.google.com/detail/greencheck/higoeedlibiodackgafaighadodofjja?authuser=0&hl=en",
+	"firefoxStoreLink": "https://addons.mozilla.org/en-GB/firefox/addon/greencheck/",
+	"edgeStoreLink": "https://microsoftedge.microsoft.com/addons/detail/greencheck/lemnlcgcdeldjpgfaajgjfefohadnaid"
 }

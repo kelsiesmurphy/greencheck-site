@@ -23,7 +23,7 @@
 				<p>Options</p>
 			</Tooltip.Content>
 		</Tooltip.Root> -->
-		<Sun size={20}/>
+		<Sun size={20} />
 		<!-- <ModeToggle /> -->
 	</div>
 </div>
