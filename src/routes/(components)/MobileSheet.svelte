@@ -30,7 +30,7 @@
 				target="_blank"
 				on:click={() => sendGumroadLog('gumroad', 'Gumroad Button in Mobile Sheet')}
 			>
-				<ShoppingCart class="mr-2 h-4 w-4" />Get Plus for £30
+				<ShoppingCart class="mr-2 h-4 w-4" />Get Plus for £{content.price}
 			</Button>
 		</div>
 	</Sheet.Content>
