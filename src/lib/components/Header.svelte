@@ -1,5 +1,5 @@
 <script lang="ts">
-	import Logomark from '$lib/assets/Logomark.svg';
+	import Logomark from '$lib/assets/logomark.svg';
 	import { Button } from '$lib/components/ui/button';
 	import { Globe, ShoppingCart } from 'lucide-svelte';
 	import HeaderMobile from '../../routes/(components)/HeaderMobile.svelte';

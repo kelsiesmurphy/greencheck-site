@@ -1,5 +1,5 @@
 <script lang="ts">
-	import Logomark from '$lib/assets/Logomark.svg';
+	import Logomark from '$lib/assets/logomark.svg';
 	import MobileSheet from './MobileSheet.svelte';
 
 </script>

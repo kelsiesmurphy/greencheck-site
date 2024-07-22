@@ -3,7 +3,7 @@
 	import { Globe, Menu, ShoppingCart } from 'lucide-svelte';
 	import content from '$lib/content.json';
 
-	import Logomark from '$lib/assets/Logomark.svg';
+	import Logomark from '$lib/assets/logomark.svg';
 	import { Button, buttonVariants } from '$lib/components/ui/button';
 	import { sendGumroadLog } from '$lib/utils/logs';
 </script>
