@@ -1,7 +1,6 @@
 <script lang="ts">
 	import * as Accordion from '$lib/components/ui/accordion/index.js';
 	import content from '$lib/content.json';
-	import { sendGumroadLog } from '$lib/utils/logs';
 
 	const faqList = [
 		{
@@ -32,6 +31,11 @@
 			question:
 				'Your tool shows that my website does not run on green energy, how can I change this?',
 			answer: `We recommend looking through the list of green hosting providers listed at <a class="underline" href="https://www.thegreenwebfoundation.org/directory/" target="_blank">The Green Web Foundation's Green Web Directory</a>, and identifying a suitable host to switch to. Here at GreenCheck, we use <a class="underline" href="https://pages.cloudflare.com/" target="_blank">Cloudflare</a>. If you suspect your website hosting provider should be within the Green Web Foundation's dataset, you can encourage them to <a class="underline" href="https://admin.thegreenwebfoundation.org/provider-portal/">get verified with them</a>.`
+		},
+		{
+			id: 5,
+			question: `Does this work for search engines other than Google Search?`,
+			answer: `At this moment in time, we only support Google Search, although we do have plans to support other search engines in future. If you would like to see a specific search engine, reach out to <a href="mailto:greenchecksupport@proton.me">greenchecksupport@proton.me</a> to request it, and we'll look into building it!`
 		}
 	];
 </script>
