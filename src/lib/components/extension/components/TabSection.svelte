@@ -2,12 +2,12 @@
 	import copyText from '../copy.json';
 	import GreenEnergyCheck from './GreenEnergyCheck.svelte';
 	import CarbonAnalysis from './CarbonAnalysis.svelte';
-	import * as Tabs from "$lib/components/ui/tabs";
+	import * as Tabs from '$lib/components/ui/tabs';
 	import { Sprout, FileBarChart2 } from 'lucide-svelte';
 </script>
 
 <Tabs.Root value="tab-one">
-	<Tabs.List class="w-full flex flex-wrap h-auto">
+	<Tabs.List class="flex h-auto w-full flex-wrap">
 		<Tabs.Trigger value="tab-one" class="flex-1">
 			<Sprout class="mr-2 h-4 w-4" />{' '}
 			{copyText.popup.tabOne.buttonText}

@@ -34,10 +34,17 @@
 		</ul>
 		<div class="w-full space-y-8 pt-6">
 			<hr />
-			<div class="text-muted-foreground flex items-center flex-wrap-reverse justify-between gap-6 text-xs outline-brand">
+			<div
+				class="outline-brand flex flex-wrap-reverse items-center justify-between gap-6 text-xs text-muted-foreground"
+			>
 				<p>© 2024 GreenCheck. All rights reserved.</p>
 				<div class="flex gap-1">
-					<Button variant="link" size="sm" href="/privacy" class="hover:underline text-muted-foreground text-xs">Privacy</Button>
+					<Button
+						variant="link"
+						size="sm"
+						href="/privacy"
+						class="text-xs text-muted-foreground hover:underline">Privacy</Button
+					>
 				</div>
 			</div>
 		</div>
