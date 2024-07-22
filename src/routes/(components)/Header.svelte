@@ -1,5 +1,5 @@
 <script lang="ts">
-	import logomark from '$lib/assets/logomark.svg';
+	import Logomark from '$lib/assets/Logomark.svg';
 	import { Button } from '$lib/components/ui/button';
 	import { Globe, ShoppingCart } from 'lucide-svelte';
 	import { onMount } from 'svelte';
@@ -28,7 +28,7 @@
 		class:scrolled={$scrolled}
 	>
 		<div class="logo py-0 transition-all duration-300" class:fixed-top-right={!$scrolled}>
-			<img src={logomark} alt="Greencheck logo" />
+			<img src={Logomark} alt="Greencheck logo" />
 		</div>
 		{#if $scrolled}
 			<div class="flex flex-col gap-3 sm:flex-row">
