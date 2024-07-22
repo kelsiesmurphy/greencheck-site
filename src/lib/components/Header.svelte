@@ -1,5 +1,5 @@
 <script lang="ts">
-	import Logomark from '$lib/assets/logomark.svg';
+	import logomark from '$lib/assets/logomark.svg';
 	import { Button } from '$lib/components/ui/button';
 	import { Globe, ShoppingCart } from 'lucide-svelte';
 	import HeaderMobile from '../../routes/(components)/HeaderMobile.svelte';
@@ -10,7 +10,7 @@
 <div>
 	<nav class="hidden items-center justify-between p-4 transition-all sm:flex">
 		<div class="logo py-0 transition-all duration-300">
-			<a href="/" class="outline-brand"><img src={Logomark} alt="Greencheck logo" /></a>
+			<a href="/" class="outline-brand"><img src={logomark} alt="Greencheck logo" /></a>
 		</div>
 		<div class="flex flex-col gap-3 sm:flex-row">
 			<Button

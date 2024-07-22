@@ -3,13 +3,13 @@
 	// import * as Tooltip from '$lib/components/ui/tooltip';
 	import { Sun } from 'lucide-svelte';
 
-	import Logomark from '$lib/assets/logomark_white.svg';
+	import logomark from '$lib/assets/logomark_white.svg';
 </script>
 
 <div
 	class="flex items-center justify-between bg-emerald-800 px-6 py-4 text-xl font-medium text-white"
 >
-	<img src={Logomark} class="aspect-[224.87 / 48] h-9" alt="" />
+	<img src={logomark} class="aspect-[224.87 / 48] h-9" alt="" />
 	<div class="flex gap-1">
 		<!-- <Tooltip.Root>
 			<Tooltip.Trigger>

@@ -1,5 +1,5 @@
 <script lang="ts">
-	import Logomark from '$lib/assets/logomark.svg';
+	import logomark from '$lib/assets/logomark.svg';
 	import { Button } from '$lib/components/ui/button';
 
 	const footerItems = [
@@ -24,7 +24,7 @@
 
 <footer class="py-16">
 	<div class="flex flex-col items-center gap-6 text-zinc-600">
-		<Button variant="link" href="/"><img src={Logomark} alt="Greencheck logo" /></Button>
+		<Button variant="link" href="/"><img src={logomark} alt="Greencheck logo" /></Button>
 		<ul class="grid grid-cols-2 justify-center sm:flex sm:flex-wrap">
 			{#each [...footerItems.values()] as value}
 				<li class="list-none">
