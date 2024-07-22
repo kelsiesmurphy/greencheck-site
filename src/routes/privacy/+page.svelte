@@ -4,7 +4,7 @@
 	let privacyContent = '';
 
 	onMount(async () => {
-		const response = await fetch('/privacy.html');
+		const response = await fetch('./privacy.html');
 		privacyContent = await response.text();
 	});
 
