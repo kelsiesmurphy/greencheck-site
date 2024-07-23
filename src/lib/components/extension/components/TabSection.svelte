@@ -7,7 +7,7 @@
 </script>
 
 <Tabs.Root value="tab-one">
-	<Tabs.List class="flex h-auto w-full flex-wrap">
+	<Tabs.List class="flex h-auto w-full flex-wrap gap-y-1">
 		<Tabs.Trigger value="tab-one" class="flex-1">
 			<Sprout class="mr-2 h-4 w-4" />{' '}
 			{copyText.popup.tabOne.buttonText}

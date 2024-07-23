@@ -33,7 +33,7 @@
 						<Sprout size={20} />
 					</div>
 					<div class="max-w-64">
-						<h4 class="text-base font-medium">Good news!</h4>
+						<h4 class="text-base font-medium">This website is green!</h4>
 						<div class="text-sm">
 							This website is hosted by{' '}
 							<a href={greenHost.hosted_by_website} class="outline-brand hover:underline"

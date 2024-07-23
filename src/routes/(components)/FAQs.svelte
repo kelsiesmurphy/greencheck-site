@@ -53,7 +53,7 @@
 			{#each faqList as faq}
 				<Accordion.Item value={faq.id.toString()} class="py-4">
 					<Accordion.Trigger class="outline-brand">{faq.question}</Accordion.Trigger>
-					<Accordion.Content class="pt-4">
+					<Accordion.Content class="pt-4 text-base">
 						{@html faq.answer}
 					</Accordion.Content>
 				</Accordion.Item>
