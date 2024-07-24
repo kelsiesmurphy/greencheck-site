@@ -17,7 +17,8 @@
 				`Go to the <a class="underline" href=${content.chromeStoreLink} target="_blank">GreenCheck Extension page in the Chrome Web Store</a>`,
 				"Click the 'Add to Chrome' button",
 				'Open the extension popup by clicking the puzzle icon in the Chrome browsers search bar',
-				`Access <a class="underline" href=${content.gumroadLink} target="_blank">GreenCheck Plus</a> features in the extension popup by switching to the Carbon Analysis tab, and entering your license key, emailed to you from Gumroad.`
+				`Access <a class="underline" href=${content.gumroadLink} target="_blank">GreenCheck Plus</a> features in the extension popup by switching to the Carbon Analysis tab, and entering your license key, emailed to you from Gumroad.`,
+				"Note: This also applies to other browsers that run on Chromium, including Arc and Brave.",
 			]
 		},
 		{

@@ -70,7 +70,7 @@
 						bind:value={$formData.license_key}
 					/>
 				</Form.Control>
-				<Form.Description>This is the license key sent to by email.</Form.Description>
+				<Form.Description>This is the license key sent to you by email.</Form.Description>
 				<Form.FieldErrors />
 			</Form.Field>
 			<Form.Button>Submit</Form.Button>
