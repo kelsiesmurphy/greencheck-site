@@ -7,7 +7,7 @@
 			title: 'See green-hosted websites at a glance',
 			premium: false,
 			gifLink:
-				'https://vhzqiumeoyudnxmuhyvz.supabase.co/storage/v1/object/public/marketing/green-search.gif?t=2024-07-22T16%3A04%3A57.578Z',
+				'https://vhzqiumeoyudnxmuhyvz.supabase.co/storage/v1/object/public/marketing/search-results.gif?t=2024-07-24T13%3A06%3A16.785Z',
 			description:
 				'Google Search results will show an 🌱 icon next to websites hosted with green energy and provide supporting documentation from The Green Web Foundation.'
 		},
@@ -15,7 +15,7 @@
 			title: 'Check to see if a website is hosted sustainably',
 			premium: false,
 			gifLink:
-				'https://vhzqiumeoyudnxmuhyvz.supabase.co/storage/v1/object/public/marketing/green-energy-check.gif?t=2024-07-22T16%3A05%3A35.639Z',
+				'https://vhzqiumeoyudnxmuhyvz.supabase.co/storage/v1/object/public/marketing/green-energy-check.gif?t=2024-07-24T13%3A06%3A00.198Z',
 			description:
 				"To check if a website runs on green energy, open the extension from your browser's navigation bar, and it will inform you."
 		},
@@ -23,18 +23,18 @@
 			title: 'Carbon Analysis',
 			premium: true,
 			gifLink:
-				'https://vhzqiumeoyudnxmuhyvz.supabase.co/storage/v1/object/public/marketing/carbon-analysis.gif?t=2024-07-22T15%3A34%3A39.677Z',
+				'https://vhzqiumeoyudnxmuhyvz.supabase.co/storage/v1/object/public/marketing/carbon-analysis.gif?t=2024-07-24T13%3A05%3A50.411Z',
 			description:
 				"With a valid license key, scan the website you're on for realtime information on the CO2 output each time the page is loaded, the calculated energy used to load the page, a ranking given to the webpage compared to all web pages globally."
 		},
-		{
-			title: 'Carbon Footer',
-			premium: true,
-			gifLink:
-				'https://vhzqiumeoyudnxmuhyvz.supabase.co/storage/v1/object/public/marketing/carbon-footer.gif?t=2024-07-22T16%3A27%3A07.486Z',
-			description:
-				'To each web-pages footer, a widget will be added telling you at a glance the carbon output of the page.'
-		}
+		// {
+		// 	title: 'Carbon Footer',
+		// 	premium: true,
+		// 	gifLink:
+		// 		'https://vhzqiumeoyudnxmuhyvz.supabase.co/storage/v1/object/public/marketing/carbon-footer.gif?t=2024-07-22T16%3A27%3A07.486Z',
+		// 	description:
+		// 		'To each web-pages footer, a widget will be added telling you at a glance the carbon output of the page.'
+		// }
 	];
 
 	let currentTab = featureList[0];
@@ -63,8 +63,8 @@
 				</li>
 			{/each}
 		</ul>
-		<div class="flex min-w-[300px] max-w-xl flex-1 items-center justify-end">
-			<img src={currentTab.gifLink} alt={`Animated GIF for ${currentTab.title}`} />
+		<div class="flex min-w-[300px] max-w-xl flex-1 items-center justify-end p-12 bg-gray-100">
+			<img src={currentTab.gifLink} class="rounded-md shadow-lg" alt={`Animated GIF for ${currentTab.title}`} />
 		</div>
 	</div>
 </section>
