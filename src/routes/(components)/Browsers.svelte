@@ -18,9 +18,10 @@
 <section class="space-y-16 py-24">
 	<div class="flex flex-col items-center justify-center gap-4">
 		<div class="flex items-center gap-3 rounded-full bg-secondary p-1 pr-2.5">
-			<Badge>What's new?</Badge>
+			<Badge>v0.1.0</Badge>
 			<div class="flex items-center gap-1 text-sm font-medium">
-				We’re in Beta!<ArrowRight class="ml-2 h-4 w-4" />
+				We’re in Beta!
+				<!-- <ArrowRight class="ml-2 h-4 w-4" /> -->
 			</div>
 		</div>
 		<h2 class="text-center text-3xl font-semibold md:text-4xl">Works across multiple browsers</h2>

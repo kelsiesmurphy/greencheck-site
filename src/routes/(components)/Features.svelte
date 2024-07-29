@@ -17,24 +17,23 @@
 			gifLink:
 				'https://vhzqiumeoyudnxmuhyvz.supabase.co/storage/v1/object/public/marketing/green-energy-check.gif?t=2024-07-24T13%3A06%3A00.198Z',
 			description:
-				"To check if a website runs on green energy, open the extension from your browser's navigation bar, and it will inform you."
+				"To check if a website runs on green energy, open the extension from your browser's navigation bar to check the website's green hosting status."
 		},
 		{
-			title: 'Carbon Analysis',
+			title: 'Run a Carbon Analysis scan',
 			premium: true,
 			gifLink:
 				'https://vhzqiumeoyudnxmuhyvz.supabase.co/storage/v1/object/public/marketing/carbon-analysis.gif?t=2024-07-24T13%3A05%3A50.411Z',
 			description:
 				"With a valid license key, scan the website you're on for realtime information on the CO2 output each time the page is loaded, the calculated energy used to load the page, a ranking given to the webpage compared to all web pages globally."
 		},
-		// {
-		// 	title: 'Carbon Footer',
-		// 	premium: true,
-		// 	gifLink:
-		// 		'https://vhzqiumeoyudnxmuhyvz.supabase.co/storage/v1/object/public/marketing/carbon-footer.gif?t=2024-07-22T16%3A27%3A07.486Z',
-		// 	description:
-		// 		'To each web-pages footer, a widget will be added telling you at a glance the carbon output of the page.'
-		// }
+		{
+			title: 'See at a glance from the extension icon',
+			premium: true,
+			gifLink: 'https://vhzqiumeoyudnxmuhyvz.supabase.co/storage/v1/object/public/marketing/carbon-icon.gif',
+			description:
+				'As you browse websites, you can see at a glance if the website runs on green energy or not, directly from the icon in your browsers extension bar.'
+		}
 	];
 
 	let currentTab = featureList[0];
@@ -48,14 +47,16 @@
 				<li>
 					<button
 						on:click={() => (currentTab = feature)}
-						class={`${currentTab == feature ? 'border-primary' : 'border-secondary'} outline-brand flex flex-col gap-2 border-l-4 px-6 py-4 transition-colors duration-300`}
+						class={`${currentTab == feature ? 'border-primary' : 'border-secondary'} outline-brand flex flex-col gap-2 border-l-4 px-6 py-4 text-left transition-colors duration-300`}
 					>
 						<div class="flex items-center gap-4">
 							<h3 class="text-lg font-semibold md:text-xl">
 								{feature.title}
 							</h3>
 							{#if feature.premium}
-								<Badge href={content.gumroadLink} target="_blank">GreenCheck Plus</Badge>
+								<Badge href={content.gumroadLink} target="_blank" class="text-center"
+									>GreenCheck Plus</Badge
+								>
 							{/if}
 						</div>
 						<p class="text-left text-muted-foreground">{feature.description}</p>
@@ -63,8 +64,12 @@
 				</li>
 			{/each}
 		</ul>
-		<div class="flex min-w-[300px] max-w-xl flex-1 items-center justify-end p-12 bg-gray-100">
-			<img src={currentTab.gifLink} class="rounded-md shadow-lg" alt={`Animated GIF for ${currentTab.title}`} />
+		<div class="flex min-w-[300px] max-w-xl flex-1 items-center justify-end bg-gray-100 p-12">
+			<img
+				src={currentTab.gifLink}
+				class="rounded-md shadow-lg"
+				alt={`Animated GIF for ${currentTab.title}`}
+			/>
 		</div>
 	</div>
 </section>
