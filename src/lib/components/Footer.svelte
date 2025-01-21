@@ -37,7 +37,7 @@
 			<div
 				class="outline-brand flex flex-wrap-reverse items-center justify-between gap-6 text-xs text-muted-foreground"
 			>
-				<p>© 2024 GreenCheck. All rights reserved.</p>
+				<p>© 2025 GreenCheck. All rights reserved.</p>
 				<div class="flex gap-1">
 					<Button
 						variant="link"
