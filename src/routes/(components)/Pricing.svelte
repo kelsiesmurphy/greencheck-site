@@ -4,7 +4,6 @@
 	import Checkmark from '$lib/assets/checkmark.svg';
 	import content from '$lib/content.json';
 	import { FileBarChart2, Sprout, TextSearch } from 'lucide-svelte';
-	import { sendGumroadLog } from '$lib/utils/logs';
 
 	const featureList = [
 		{
@@ -76,12 +75,7 @@
 			</Card.Content>
 			<hr />
 			<Card.Footer class="py-8">
-				<Button
-					href={content.gumroadLink}
-					on:click={() => sendGumroadLog('gumroad', 'Gumroad Get plus button in Pricing Card')}
-					target="_blank"
-					class="w-full">Get plus</Button
-				>
+				<Button href={content.chromeStoreLink} target="_blank" class="w-full">Get plus</Button>
 			</Card.Footer>
 		</Card.Root>
 	</div>

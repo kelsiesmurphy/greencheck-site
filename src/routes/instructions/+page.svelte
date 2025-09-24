@@ -10,41 +10,38 @@
 		{
 			name: 'Chrome',
 			logo: ChromeLogo,
-			image:
-				'https://vhzqiumeoyudnxmuhyvz.supabase.co/storage/v1/object/public/marketing/chrome.gif?t=2024-07-22T15%3A39%3A41.415Z',
+			image: '/media/chrome.gif',
 			link: content.chromeStoreLink,
 			instructions_list: [
 				`Go to the <a class="underline" href=${content.chromeStoreLink} target="_blank">GreenCheck Extension page in the Chrome Web Store</a>`,
 				"Click the 'Add to Chrome' button",
 				'Open the extension popup by clicking the puzzle icon in the Chrome browsers search bar',
-				`Access <a class="underline" href=${content.gumroadLink} target="_blank">GreenCheck Plus</a> features in the extension popup by switching to the Carbon Analysis tab, and entering your license key, emailed to you from Gumroad.`,
-				"Note: This also applies to other browsers that run on Chromium, including Arc and Brave.",
+				`Access <a class="underline" href=${content.chromeStoreLink} target="_blank">GreenCheck Plus</a> features in the extension popup by switching to the Carbon Analysis tab, and entering your license key, emailed to you from Gumroad.`,
+				'Note: This also applies to other browsers that run on Chromium, including Arc and Brave.'
 			]
 		},
 		{
 			name: 'Firefox',
 			logo: FirefoxLogo,
-			image:
-				'https://vhzqiumeoyudnxmuhyvz.supabase.co/storage/v1/object/public/marketing/firefox.gif?t=2024-07-22T15%3A40%3A02.004Z',
+			image: '/media/firefox.gif',
 			link: content.firefoxStoreLink,
 			instructions_list: [
 				`Go to the <a class="underline" href=${content.firefoxStoreLink} target="_blank">GreenCheck Add-on page in the Firefox Add-ons library</a>`,
 				"Click the 'Add to Firefox' button",
 				'Open the extension popup by clicking the puzzle icon in the Firefox browsers search bar',
-				`Access <a class="underline" href=${content.gumroadLink} target="_blank">GreenCheck Plus</a> features in the extension popup by switching to the Carbon Analysis tab, and entering your license key, emailed to you from Gumroad.`
+				`Access <a class="underline" href=${content.chromeStoreLink} target="_blank">GreenCheck Plus</a> features in the extension popup by switching to the Carbon Analysis tab, and entering your license key, emailed to you from Gumroad.`
 			]
 		},
 		{
 			name: 'Edge',
 			logo: EdgeLogo,
-			image:
-				'https://vhzqiumeoyudnxmuhyvz.supabase.co/storage/v1/object/public/marketing/edge.gif?t=2024-07-22T15%3A39%3A54.700Z',
+			image: '/media/edge.gif',
 			link: content.edgeStoreLink,
 			instructions_list: [
 				`Go to the <a class="underline" href=${content.edgeStoreLink} target="_blank">GreenCheck Add-on in the Edge Add-ons library</a>`,
 				"Click the 'Get' button",
 				'Open the extension popup by clicking the puzzle icon in the Edge browsers search bar',
-				`Access <a class="underline" href=${content.gumroadLink} target="_blank">GreenCheck Plus</a> features in the extension popup by switching to the Carbon Analysis tab, and entering your license key, emailed to you from Gumroad.`
+				`Access <a class="underline" href=${content.chromeStoreLink} target="_blank">GreenCheck Plus</a> features in the extension popup by switching to the Carbon Analysis tab, and entering your license key, emailed to you from Gumroad.`
 			]
 		}
 	];

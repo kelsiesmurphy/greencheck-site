@@ -1,20 +1,15 @@
 <script lang="ts">
 	import * as Sheet from '$lib/components/ui/sheet';
-	import { Globe, Menu, ShoppingCart } from 'lucide-svelte';
+	import { Chrome, HandCoins, Menu } from 'lucide-svelte';
 	import content from '$lib/content.json';
 
 	import Logomark from '$lib/assets/Logomark.svg';
 	import { Button, buttonVariants } from '$lib/components/ui/button';
-	import { sendGumroadLog } from '$lib/utils/logs';
 
 	const listItems = [
 		{
 			title: 'Instructions',
 			link: '/instructions'
-		},
-		{
-			title: 'Manage License',
-			link: '/manage-license'
 		},
 		{
 			title: 'Privacy Policy',
@@ -40,22 +35,13 @@
 				</li>
 			{/each}
 			<li>
-				<Button
-					class="w-full"
-					href={content.chromeStoreLink}
-					on:click={() => sendGumroadLog('chrome', 'Get Basic for free in Mobile Sheet')}
-					target="_blank"
-					variant="secondary"><Globe class="mr-2 h-4 w-4" />Get Basic for free</Button
+				<Button class="w-full" href={content.donationLink} target="_blank" variant="secondary"
+					><HandCoins class="mr-2 h-4 w-4" />Support</Button
 				>
 			</li>
 			<li>
-				<Button
-					class="w-full"
-					href={content.gumroadLink}
-					target="_blank"
-					on:click={() => sendGumroadLog('gumroad', 'Gumroad Button in Mobile Sheet')}
-				>
-					<ShoppingCart class="mr-2 h-4 w-4" />Get Plus for £{content.price}
+				<Button class="w-full" href={content.chromeStoreLink} target="_blank">
+					<Chrome class="mr-2 h-4 w-4" />Get extension
 				</Button>
 			</li>
 		</ul>

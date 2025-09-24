@@ -6,31 +6,28 @@
 		{
 			title: 'See green-hosted websites at a glance',
 			premium: false,
-			gifLink:
-				'https://vhzqiumeoyudnxmuhyvz.supabase.co/storage/v1/object/public/marketing/search-results.gif?t=2024-07-24T13%3A06%3A16.785Z',
+			gifLink: '/media/search-results.gif',
 			description:
 				'Google Search results will show an 🌱 icon next to websites hosted with green energy and provide supporting documentation from The Green Web Foundation.'
 		},
 		{
 			title: 'Check to see if a website is hosted sustainably',
 			premium: false,
-			gifLink:
-				'https://vhzqiumeoyudnxmuhyvz.supabase.co/storage/v1/object/public/marketing/green-energy-check.gif?t=2024-07-24T13%3A06%3A00.198Z',
+			gifLink: '/media/green-energy-check.gif',
 			description:
 				"To check if a website runs on green energy, open the extension from your browser's navigation bar to check the website's green hosting status."
 		},
 		{
 			title: 'Run a Carbon Analysis scan',
-			premium: true,
-			gifLink:
-				'https://vhzqiumeoyudnxmuhyvz.supabase.co/storage/v1/object/public/marketing/carbon-analysis.gif?t=2024-07-24T13%3A05%3A50.411Z',
+			premium: false,
+			gifLink: '/media/carbon-analysis.gif',
 			description:
 				"With a valid license key, scan the website you're on for realtime information on the CO2 output each time the page is loaded, the calculated energy used to load the page, a ranking given to the webpage compared to all web pages globally."
 		},
 		{
 			title: 'See at a glance from the extension icon',
-			premium: true,
-			gifLink: 'https://vhzqiumeoyudnxmuhyvz.supabase.co/storage/v1/object/public/marketing/carbon-icon.gif',
+			premium: false,
+			gifLink: '/media/carbon-icon.gif',
 			description:
 				'As you browse websites, you can see at a glance if the website runs on green energy or not, directly from the icon in your browsers extension bar.'
 		}
@@ -54,7 +51,7 @@
 								{feature.title}
 							</h3>
 							{#if feature.premium}
-								<Badge href={content.gumroadLink} target="_blank" class="text-center"
+								<Badge href={content.chromeStoreLink} target="_blank" class="text-center"
 									>GreenCheck Plus</Badge
 								>
 							{/if}
