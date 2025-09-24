@@ -1,6 +1,6 @@
 <script lang="ts">
 	import * as Sheet from '$lib/components/ui/sheet';
-	import { Chrome, HandCoins, Menu } from 'lucide-svelte';
+	import { Chrome, Coffee, Menu } from 'lucide-svelte';
 	import content from '$lib/content.json';
 
 	import Logomark from '$lib/assets/Logomark.svg';
@@ -36,7 +36,7 @@
 			{/each}
 			<li>
 				<Button class="w-full" href={content.donationLink} target="_blank" variant="secondary"
-					><HandCoins class="mr-2 h-4 w-4" />Support</Button
+					><Coffee class="mr-2 h-4 w-4" />Buy me a coffee</Button
 				>
 			</li>
 			<li>
