@@ -9,7 +9,7 @@
 			gifLink:
 				'https://vhzqiumeoyudnxmuhyvz.supabase.co/storage/v1/object/public/marketing/search-results.gif?t=2024-07-24T13%3A06%3A16.785Z',
 			description:
-				'Google Search results will show an ✅ icon next to websites hosted with green energy and provide supporting documentation from The Green Web Foundation.'
+				'Google Search results will show an 🌱 icon next to websites hosted with green energy and provide supporting documentation from The Green Web Foundation.'
 		},
 		{
 			title: 'Check to see if a website is hosted sustainably',
@@ -30,8 +30,7 @@
 		{
 			title: 'See at a glance from the extension icon',
 			premium: true,
-			gifLink:
-				'https://vhzqiumeoyudnxmuhyvz.supabase.co/storage/v1/object/public/marketing/carbon-icon.gif',
+			gifLink: 'https://vhzqiumeoyudnxmuhyvz.supabase.co/storage/v1/object/public/marketing/carbon-icon.gif',
 			description:
 				'As you browse websites, you can see at a glance if the website runs on green energy or not, directly from the icon in your browsers extension bar.'
 		}
